@@ -3,10 +3,14 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'primeng': 'vendor/primeng',
+  'primeui': 'vendor/primeui'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'primeng': { defaultExtension: 'js' },
+  'primeui': { defaultExtension: 'js', main: 'primeui-ng-all.min'}
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -20,6 +24,7 @@ const barrels: string[] = [
   '@angular/compiler',
   '@angular/http',
   '@angular/router',
+  '@angular/router-deprecated',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
 
@@ -29,6 +34,8 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/menu',
+  'app/footer',
   /** @cli-barrel */
 ];
 
